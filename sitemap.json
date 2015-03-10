@@ -1,1 +1,20 @@
-{}
+[
+  {
+    "url": "/account",
+    "templateUrl": "app/member/account/account.tpl.html",
+    "controller": "accountController",
+    "animation": "slideLeft",
+    "isLogin": true
+  },
+  {
+    "url": "/account/email",
+    "template": function(){ return ''; },
+    "templateUrl": "app/member/account/email.tpl.html",
+    "controller": "function(){ console.log('kdjakjdakldjakjdakjdalkjalkdjalkjddslk'); }",
+    "controllerAs": "",
+    "resolve": "{key: ''}",
+    "caseInsensitiveMatch": "true",
+    "animation": "slideLeft",
+    "isLogin": true
+  }
+]

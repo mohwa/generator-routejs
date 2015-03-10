@@ -1,0 +1,34 @@
+{
+  "name": "route.js file generator",
+  "version": "0.0.1",
+  "homepage": "http://mohwaproject.tistory.com/",
+  "authors": [
+    "mohwa <yanione2@gmail.com>"
+  ],
+
+  "description": "route.js file generator on requireJS",
+
+  "dependencies": {
+    "angular": "~1.2.26",
+    "requirejs": "~2.1.14"
+  },
+
+  "devDependencies": {
+  },
+
+  "keywords": [
+  "angularJS",
+  "requireJS",
+  "ngRoute",
+  "angular seo"
+  ],
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".gitignore"
+  ],
+
+  "license": "MIT"
+}
