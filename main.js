@@ -4,6 +4,7 @@ requirejs.config({
 
     "paths": {
         "angular": 'bower_components/angular/angular.min',
+        "angular_routejs": 'bower_components/angular-route/angular-route.min',
         "app": 'app'
     },
 
@@ -11,13 +12,17 @@ requirejs.config({
         "angular": {
             "exports": 'angular'
         },
-        //"routes": {
-        //    "deps": ['app'],
-        //    "exports": 'routes'
-        //},
+        "angular_routejs": {
+            "deps": ['angular']
+        },
+        "routes": {
+            "deps": ['app'],
+            "exports": 'routes'
+        },
         "app": {
             "deps": [
-                'angular'
+                'angular',
+                'angular_routejs'
             ],
             "exports": 'app'
         }
@@ -25,7 +30,8 @@ requirejs.config({
 });
 
 define([
-    'app'
+    'app',
+    'route'
 ], function(app){
 
     angular.element(document).ready(function(e){

@@ -1,20 +1,26 @@
-[
-  {
-    "url": "/account",
-    "templateUrl": "app/member/account/account.tpl.html",
-    "controller": "accountController",
-    "animation": "slideLeft",
-    "isLogin": true
-  },
-  {
-    "url": "/account/email",
-    "template": function(){ return ''; },
-    "templateUrl": "app/member/account/email.tpl.html",
-    "controller": "function(){ console.log('kdjakjdakldjakjdakjdalkjalkdjalkjddslk'); }",
-    "controllerAs": "",
-    "resolve": "{key: ''}",
-    "caseInsensitiveMatch": "true",
-    "animation": "slideLeft",
-    "isLogin": true
-  }
-]
+{
+  "sitemap": [
+    {
+      "url": "/page2",
+      "template": "<div>page2</div>",
+      "controller": "function(){ console.log('page2');}",
+      "animation": "slideLeft",
+      "isLogin": true
+    },
+    {
+      "url": "/page3",
+      "template": "<div>page3</div>",
+      "controller": "function(){ console.log('page3');}",
+      "animation": "slideLeft",
+      "isLogin": true
+    },
+    {
+      "url": "/page1",
+      "template": "<div>page1</div>",
+      "controller": "function(){ console.log('page1');}",
+      "animation": "slideLeft",
+      "isLogin": true
+    }
+  ]
+}
+
